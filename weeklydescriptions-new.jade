@@ -1,0 +1,188 @@
+extends master-layout-fullwidth2
+
+block pagetitle
+	title Weekly Kids Coding Classes | Spring 2017 | Power Up Tech Academy
+
+block metatag
+	meta(description="Learn to code year-round with weekly classes. Make video games, Minecraft mods, websites and more.")
+
+
+block content
+	.container.width-80-percent
+		h2.heading-section.text-center WE OFFER A VARIETY OF CODING LANGUAGES FOR KIDS 
+		p Our range of coding classes takes you from age 5 to 13 with a sequence of progressively more complex coding languages. Changing coding languages also offers a variety of games, apps, websites and more that kids can make.
+		p Visit our 
+			a(href="codingcurriculum.html") curriculum page
+			|  to understand the appropriate sequence of classes.
+		.row.pad-bottom.pad-top
+			.col-sm-4
+				p 
+			.col-sm-8
+				| Click the circles to explore our classes
+				ul.nav.nav-pills
+					li(role="presentation")
+						button.circle-button(onclick="ec()") 
+							img.circle-img(src="img/circle-ec.png" width="50px")
+					li(role="presentation")
+						button.circle-button(onclick="vg()") 
+							img.circle-img(src="img/circle-vg.png" width="50px")
+					li(role="presentation")
+						button.circle-button(onclick="m()") 
+							img.circle-img(src="img/circle-m.png" width="50px")
+					li(role="presentation")
+						button.circle-button(onclick="p()") 
+							img.circle-img(src="img/circle-p.png" width="50px")
+					li(role="presentation")
+						button.circle-button(onclick="w()") 
+							img.circle-img(src="img/circle-w.png" width="50px")
+					li(role="presentation")
+						button.circle-button(onclick="aa()") 
+							img.circle-img(src="img/circle-aa.png" width="50px")
+					li(role="presentation")
+						button.circle-button(onclick="gp()") 
+							img.circle-img(src="img/circle-gp.png" width="50px")
+
+		.row#ECdesc
+			.col-sm-4
+				.block.block-light-square
+					img(src="img/kids-coding-jr.jpg" width="100%")
+			.col-sm-8
+				.block.block-center.block-light-square 
+					.row
+						.col-xs-9.text-left.pad-left.pad-top-light
+							p.no-margin Early Coding: Stories &amp; Play
+							p.small-font Grades K-2
+						.col-xs-3.pad-top-light
+							img(src="img/circle-ec.png" width="50px" style="padding:5px;")
+				.block.block-light-inverse 
+					p A fun and interactive class that will result in working animations created by your child!
+					p In this class we learn coding basics while creating stories on the iPad. We talk about how computers and coding work, and introduce sequence, repetition, events, messages and more. Kids will also be able to add their own creative art and sounds to the projects.
+					p In addition to coding, we play fun unplugged and iPad games that teach logic and sequential thinking.
+					p This class is suitable for all levels of readers.
+					p Younger kids may repeat this class to further absorb the concepts. Older kids may be ready to proceed to Scratch. Please ask your teacher for guidance.
+					p Note: IPads are provided, but if you want to keep your work, please bring your own iPad, as files are saved locally on each device.
+
+		.row#VGdesc
+			.col-sm-4
+				.block.block-light-square
+					img(src="img/power-up-scratch-class.jpg" width="100%")
+			.col-sm-8
+				.block.block-center.block-light-square 
+					.row
+						.col-xs-9.text-left.pad-left.pad-top-light
+							p.no-margin Code your own Video Games
+							p.small-font Grades 2-6
+						.col-xs-3.pad-top-light
+							img(src="img/circle-vg.png" width="50px" style="padding:5px;")
+				.block.block-light-inverse 
+					p Discover the thrill of creating your own entertainment! 
+					p Using Scratch, a kid-friendly programming language from MIT, kids can build space invaders, a virtual pet, geometry dash or any other kind of game they can imagine. Game programming develops skills such as logic, visual design, animation, sound design, storylines and more. It's a great way to take on new challenges while having lots of fun!
+					p For kids who want something different than video games, we have a set of projects that focus on art, music and storytelling available too!
+					p This is our core language, and we recommend that kids take multiple sessions of Scratch to practice and build their coding skills. It is possible to build quite large and complex projects in Scratch, so the language will grow with their skills.
+					p Beginners will be taught to build projects step by step and learn to code starting from basics. Experienced Scratchers can select their own projects (we will help with ideas, if needed!) and work on improving their coding skills with challenges, coaching and mentorship provided by our teachers.
+		.row#AAdesc
+			.col-sm-4
+				.block.block-light-square
+					img(src="img/android-app-inventor.jpg" width="100%")
+			.col-sm-8
+				.block.block-center.block-light-square 
+					.row
+						.col-xs-9.text-left.pad-left.pad-top-light
+							p.no-margin Code your own Android Apps (returning Fall 2017)
+							p.small-font Grades 4-8
+						.col-xs-3.pad-top-light
+							img(src="img/circle-aa.png" width="50px" style="padding:5px;")
+				.block.block-light-inverse 
+					p Create real apps that you can use on your Android phone or tablet!
+					p We will learn to build apps using App Inventor, a web-based Android coding environment made by Google and MIT. This is a visual interface with block-based coding that makes Android development fast and accessible.
+					p Our apps will be able to use the phone's camera, texting (if service is set up), accelerometer, text-to-speech and more. You can even put your apps in the Google Play Store, with just a few extra steps!
+					p Android devices for use during class will be provided. You may also bring your own Android device. 
+					p A Google account is required to use App Inventor.
+		.row#Pdesc
+			.col-sm-4
+				.block.block-light-square
+					img(src="img/girl-coding.jpg" width="100%")
+			.col-sm-8
+				.block.block-center.block-light-square 
+					.row
+						.col-xs-9.text-left.pad-left.pad-top-light
+							p.no-margin Coding with Python
+							p.small-font Grades 5-8
+						.col-xs-3.pad-top-light
+							img(src="img/circle-p.png" width="50px" style="padding:5px;")
+				.block.block-light-inverse 
+					p If you are fluent in Scratch and want to move to the next level in coding with a text-based programming language, this is the class for you! We will introduce Python commands with comparisons to Scratch, so you can easily transfer your knowledge.
+					p Projects will include generating art, making and breaking secret codes, creating games and more.
+		.row#Wdesc
+			.col-sm-4
+				.block.block-light-square
+					img(src="img/website-class.jpg" width="100%")
+			.col-sm-8
+				.block.block-center.block-light-square 
+					.row
+						.col-xs-9.text-left.pad-left.pad-top-light
+							p.no-margin Code your own Website
+							p.small-font Grades 5-8
+						.col-xs-3.pad-top-light
+							img(src="img/circle-w.png" width="50px" style="padding:5px;")
+				.block.block-light-inverse 
+					p Learn the languages of the internet: HTML, CSS and Javascript. Students will build a website on a topic of their choice and learn to add text, headings, links, images and embedded content such as videos. We will add interactive elements, and also cover styling tools to make your pages look fabulous!
+					p This class will focus on "raw" HTML, CSS and Javascript. The Bootstrap grid and components will be introduced.
+		.row#Mdesc
+			.col-sm-4
+				.block.block-light-square
+					img(src="img/power-up-minecraft-night.jpg" width="100%")
+			.col-sm-8
+				.block.block-center.block-light-square 
+					.row
+						.col-xs-9.text-left.pad-left.pad-top-light
+							p.no-margin Code your own Minecraft Mods
+							p.small-font Grades 3-8
+						.col-xs-3.pad-top-light
+							img(src="img/circle-m.png" width="50px" style="padding:5px;")
+				.block.block-light-inverse 
+					p Learn to code by modifying one of today's most popular games! In this class, we use exploding chickens, drones that build houses for you, pumpkins that drop random lucky items, and more cool projects to learn about how programming works. Scratch experience is recommended.
+					p We are always adding new mods, so returning students are welcome.
+					p Each student must bring his/her own Minecraft account (PC/Mac version, available on Minecraft.net).
+					p Note: This is not a class to play Minecraft, so please set your child's expectations accordingly.
+		.row#GPdesc
+			.col-sm-4
+				.block.block-light-square
+					img(src="img/girl-power-coding.jpg" width="100%")
+			.col-sm-8
+				.block.block-center.block-light-square 
+					.row
+						.col-xs-9.text-left.pad-left.pad-top-light
+							p.no-margin Girl Power Coding (returning Fall 2017)
+							p.small-font Grades 3-8
+						.col-xs-3.pad-top-light
+							img(src="img/circle-gp.png" width="50px" style="padding:5px;")
+				.block.block-light-inverse 
+					p Learn to code in an all-girls class with a female instructor!
+					p Girls are awesome at coding, but sometimes they don't enjoy the number of boys in our classes. This class will be a friendly and comfortable way to introduce coding to your daughter or other girl in your life.
+					p We will bring project ideas that are girl-centric and allow them to express their own ideas and world view freely.
+					p The class is aimed at beginners, but girls with previous coding experience are welcome and will be given appropriate challenges.
+	.container
+		.row.pad-top
+			h2.heading-section.text-center LEARN MORE OR REGISTER NOW 
+		.row.pad-bottom
+			.col-sm-6.text-center.pad-bottom
+				.btn-align-center
+					a.btn.btn-secondary-inverse.btn-solo(href="weeklyschedule.html") View Schedule
+			.col-sm-6.text-center.pad-bottom
+				.btn-align-center
+					a.btn.btn-secondary-inverse.btn-solo(href="http://bookeo.com/powerupta?category=31507UHUE31561FB215FB") Register Now
+	section.section-light
+		.container
+			.row
+				.email-box.col-lg-6.col-lg-offset-3.col-md-8.col-md-offset-2.col-xs-10.col-xs-offset-1
+					#mc_embed_signup1
+						form#mc-embedded-subscribe-form1.validate(action="//powerupta.us8.list-manage.com/subscribe/post?u=ed0abfd69c7573fb1e0291095&amp;id=b0ca742eea" method="post" name="mc-embedded-subscribe-form" target="_blank" novalidate)
+							#mc_embed_signup_scroll1
+								h2.heading-section SIGN UP FOR UPDATES
+								p Be the first to find out about new classes, camps, special events and coding news:
+								input#mce-EMAIL1.email(type="email" value="" name="EMAIL" placeholder="email address" required style="width:300px;")
+								<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+								div(style="position: absolute; left: -5000px;")
+									input(type="text" name="b_ed0abfd69c7573fb1e0291095_b0ca742eea" tabindex="-1" value="")
+								input#mc-embedded-subscribe1.btn.btn-secondary(type="submit" value="Subscribe" name="subscribe")

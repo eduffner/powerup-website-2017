@@ -1,0 +1,83 @@
+extends master-layout-nosidebar
+
+block pagetitle
+  title Programming for Kids - coding classes in Chicago | Power Up Tech Academy
+
+block title
+  | Teaching Tips
+block content
+  section
+    .container
+      .row
+        .col-md-8.col-md-offset-2
+          h2 These teaching tips include some of the things that we have found work well, and some common stumbling blocks
+          p Click on a tip to expand
+          #accordion-approach.panel-group(role="tablist" aria-multiselectable="true")
+            .panel.panel-default
+              #headingOne.panel-heading(role="tab")
+                h3.panel-title
+                  a(data-toggle="collapse" data-parent="#accordion-approach" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne")
+                    | #1. Be explicit about 
+                    em where to find
+                    |  the command that you are using
+          
+              #collapseOne.panel-collapse.collapse(role="tabpanel" aria-labelledby="headingOne")
+                .panel-body
+                  ul
+                    li
+                      i.fa.fa-arrow-right.fa-1.fa-light 
+                      |  In Scratch, if you are switching tabs from costumes to scripts, etc. be sure to include this step
+                    li
+                      i.fa.fa-arrow-right.fa-1.fa-light 
+                      |  In Scratch and Scratch Jr, specify which sprite should contain this code
+                    li
+                      i.fa.fa-arrow-right.fa-1.fa-light 
+                      |  Say what category (both the name and color) the command is in
+                    li  
+                      i.fa.fa-arrow-right.fa-1.fa-light 
+                      |  Describe where it is on the list
+                    li  
+                      i.fa.fa-arrow-right.fa-1.fa-light 
+                      |  Name other commands it is near / above / below / beside
+                    li  
+                      i.fa.fa-arrow-right.fa-1.fa-light 
+                      |  Describe the location on the screen for the non-block commands (top / bottom / left / right)
+                    li  
+                      i.fa.fa-arrow-right.fa-1.fa-light 
+                      |  Describe the icon picture, if applicable
+                    li
+                      i.fa.fa-arrow-right.fa-1.fa-light 
+                      |  Describe what it looks like when you select it (e.g. in Scratch, the drawing tools turn blue, or there is a blue box around the sprite)
+                    li
+                      i.fa.fa-arrow-right.fa-1.fa-light 
+                      |  Physically point to the screen
+
+              #headingTwo.panel-heading(role="tab")
+                h3.panel-title
+                  a(data-toggle="collapse" data-parent="#accordion-approach" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo")
+                    | #2. Use encouragement to recognize effort and process, not (only) outcome
+          
+              #collapseTwo.panel-collapse.collapse(role="tabpanel" aria-labelledby="headingOne")
+                .panel-body
+                  ul
+                    li
+                      i.fa.fa-question.fa-1.fa-light 
+                      |  In coding and life, persistence matters every bit as much as talent and skill
+                    li
+                      i.fa.fa-arrow-right.fa-1.fa-light 
+                      |  GOOD "You did a great job" BETTER "You took on a challenging project and worked really hard to make it great"
+                    li
+                      i.fa.fa-arrow-right.fa-1.fa-light 
+                      |  GOOD "You solved it" BETTER "I saw you trying different things to make it work. That's what great coders do."
+                    li  
+                      i.fa.fa-arrow-right.fa-1.fa-light 
+                      |  Avoid stereotypes, even positive ones. It gives kids the message that success is about who they are, not what they do.
+                    li  
+                      i.fa.fa-arrow-right.fa-1.fa-light 
+                      |  SWITCH FROM "You're such a smart girl" TO "You used smart thinking to figure that out"
+                    li  
+                      i.fa.fa-arrow-right.fa-1.fa-light 
+                      |  SWITCH FROM "You're good at math so you'll find coding easier" TO "I can tell you've learned your math skills very well. You will be able to apply the same logical thinking to do excellent coding"
+                    li  
+                      i.fa.fa-arrow-right.fa-1.fa-light 
+                      |  For girls especially, it's better not to call out gender. We don't want them to hear "you did a good job FOR A GIRL" even if that's not what we said. We also should be careful about unconscious bias when working with girls - even those of us who are women may suffer from it.

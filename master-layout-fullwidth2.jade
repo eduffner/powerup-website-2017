@@ -1,0 +1,21 @@
+doctype html
+html
+  head
+    block pagetitle
+    block metatag
+    include ./includes/header.jade
+    block scripting
+   body
+    include ./includes/navbar.jade
+    section.section-secondary.section-mini
+      .container
+        .row
+          .col-xs-12 &nbsp;
+    section
+      block content
+
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js")
+    script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous")
+    script(src="js/descriptions.js")
+    script(type="text/javascript") (function(d,s,id){var z=d.createElement(s);z.type="text/javascript";z.id=id;z.async=true;z.src="//static.zotabox.com/b/8/b890fe459f1a2ae8cfc6a846062c17b3/widgets.js";var sz=d.getElementsByTagName(s)[0];sz.parentNode.insertBefore(z,sz)}(document,"script","zb-embed-code"));
+    include ./includes/footer.jade

@@ -1,0 +1,116 @@
+extends master-layout-fullwidth2
+
+block pagetitle
+  title Kids Technology Camps | Summer 2017 | Power Up Tech Academy
+
+block metatag
+  meta(description="Fees and discounts for 2017 Summer Kids Technology Camps at Power Up Tech Academy")
+
+
+block content
+  .container.width-80-percent
+    .row.pad-bottom
+      .col-xs-12
+        h2.heading-section.text-center.pad-bottom SUMMER 2017<br>KIDS TECHNOLOGY CAMP FEES
+        table
+          tr(height="50px")
+            td(width="50%" style="vertical-align:top;")
+              h4 Early Coding
+            td(width="30%" style="vertical-align:top;")
+              h4 3 hrs/day for 5 days
+            td(width="20%" style="vertical-align:top;")
+              h4.text-center $299
+          tr(height="50px")
+            td(style="vertical-align:top;")
+              h4 Code Your Own Video Games
+            td(style="vertical-align:top;")
+              h4 3 hrs/day for 5 days
+            td(style="vertical-align:top;")
+              h4.text-center $299
+          tr(height="50px")
+            td(style="vertical-align:top;")
+              h4 Minecraft Modding
+            td(style="vertical-align:top;")
+              h4 3 hrs/day for 5 days
+            td(style="vertical-align:top;")
+              h4.text-center $329
+          tr(height="50px")
+            td(style="vertical-align:top;")
+              h4 Girl Power Coding
+            td(style="vertical-align:top;")
+              h4 3 hrs/day for 5 days
+            td(style="vertical-align:top;")
+              h4.text-center $299
+          tr(height="50px")
+            td(style="vertical-align:top;")
+              h4 Middle School Coding
+            td(style="vertical-align:top;")
+              h4 3 hrs/day for 5 days
+            td(style="vertical-align:top;")
+              h4.text-center $329
+          tr(height="50px")
+            td(style="vertical-align:top;")
+              h4 Coding and Sports
+            td(style="vertical-align:top;")
+              h4 7 hrs/day for 5 days
+            td(style="vertical-align:top;")
+              h4.text-center $549
+          tr(height="50px")
+            td(style="vertical-align:top;")
+              h4 Extended care
+            td(style="vertical-align:top;")
+              h4 8-9am and 4-5pm
+            td(style="vertical-align:top;")
+              h4.text-center $120
+
+        p If you register for AM and PM in the same week, lunch hour care is provided free of charge. Students must bring their own bag lunch. No nuts please.
+        p The week of July 4th, we are only open Wed-Fri. Camp fees have been prorated. Please see the registration page.
+  .container.width-80-percent
+    .row
+      .col-xs-12.pad-bottom
+        h3.text-center.heading-section.pad-top-heavy DISCOUNTS
+        p Early Bird registration period is January 16 to February 28!
+        p Save $30 on all half day Coding camps with code EARLY2017. 
+        p Save $50 on Coding and Sports full day camps with code EARLYSPORTS2017.
+        p 
+        p If you are signing up two or more children in the same family during one session, you may use code SIBLING to get a 10% discount per child.
+
+        p.pad-top-light Please note: You may only use one discount per class. Thank you!
+        
+    .row
+      .col-xs-12
+        h3.text-center.heading-section.pad-top-heavy STUDENT REFERRAL PROGRAM
+        p We are a small, locally-owned business, and we rely on our satisfied students to help us to spread the word about our awesome classes and camps.
+        p As a thank you for your referrals, we offer a referral credit of $25 for each new student you refer. Just tell your friends to put your name in the referral box when they sign up! It's that easy!
+        h3.pad-top The Fine Print
+        p There are no limits on the number of different students you can refer, but you can only receive one credit for a given student.
+        p The new student must first register and pay for a Power Up Tech Academy class, listing your name in the referral box. We will then add the $25 credit to your account.
+        p Your referral credit may be used for any Power Up Tech Academy class, camp or Minecraft party. There is no cash value.
+        p This program starts August 1, 2016 and is not retroactive.
+    
+  .container.width-80-percent
+    .row.pad-top
+      h2.heading-section.text-center LEARN MORE OR SIGN UP NOW 
+    .row.pad-bottom
+      .col-md-6.text-center.pad-bottom
+        .btn-align-center
+          a.btn.btn-secondary-inverse.btn-solo(href="weeklyschedule.html") View Schedule
+      .col-md-6.text-center.pad-bottom
+        .btn-align-center
+          a.btn.btn-secondary-inverse.btn-solo(href="http://bookeo.com/powerupta?category=3150KX4LPC15252265D3D") Register Now
+  section.section-light
+    .container
+      .row
+        .email-box.col-lg-6.col-lg-offset-3.col-md-8.col-md-offset-2.col-xs-10.col-xs-offset-1
+          #mc_embed_signup1
+            form#mc-embedded-subscribe-form1.validate(action="//powerupta.us8.list-manage.com/subscribe/post?u=ed0abfd69c7573fb1e0291095&amp;id=b0ca742eea" method="post" name="mc-embedded-subscribe-form" target="_blank" novalidate)
+              #mc_embed_signup_scroll1
+                h2.heading-section SIGN UP FOR UPDATES
+                p Be the first to find out about new classes, camps, special events and coding news:
+                input#mce-EMAIL1.email(type="email" value="" name="EMAIL" placeholder="email address" required style="width:300px;")
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                div(style="position: absolute; left: -5000px;")
+                  input(type="text" name="b_ed0abfd69c7573fb1e0291095_b0ca742eea" tabindex="-1" value="")
+                input#mc-embedded-subscribe1.btn.btn-secondary(type="submit" value="Subscribe" name="subscribe")
+
+

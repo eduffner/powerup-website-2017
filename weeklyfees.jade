@@ -1,0 +1,83 @@
+extends master-layout-fullwidth2
+
+block pagetitle
+  title Weekly Kids Coding Classes | Spring 2017 | Power Up Tech Academy
+
+block metatag
+  meta(description="Learn to code year-round with weekly classes. Make video games, Minecraft mods, websites and more.")
+
+
+block content
+  .container.width-80-percent
+    .row.pad-bottom
+      .col-sm-10.col-sm-offset-1.col-lg-10.col-lg-offset-1
+        h2.heading-section.text-center.pad-bottom SPRING 2017<br>KIDS CODING CLASS FEES
+        table
+          tr(height="50px")
+            td(width="30%" style="vertical-align:top;")
+              h4 Regular classes
+            td(width="50%" style="vertical-align:top;")
+              h4 60 minutes for 10 weeks or 120 minutes for 5 weeks
+            td(width="20%" style="vertical-align:top;")
+              h4.text-center $299
+          tr(height="50px")
+            td(style="vertical-align:top;")
+              h4 Website class
+            td(style="vertical-align:top;")
+              h4 75 minutes for 10 weeks
+            td(style="vertical-align:top;")
+              h4.text-center $374
+          tr(height="50px")
+            td(style="vertical-align:top;")
+              h4 Minecraft class
+            td(style="vertical-align:top;")
+              h4 60 minutes for 10 weeks or 120 minutes for 5 weeks
+            td(style="vertical-align:top;")
+              h4.text-center $329
+  .container.width-80-percent
+    .row
+      .col-xs-12.pad-bottom
+        h3 Missed Class Policy
+        p.pad-bottom  We do not offer make up lessons, in order to maintain our student-teacher ratio and offer a quality experience for all students. Your space is reserved for you during your lesson time, and it is reserved for others during the remainder of the week. We will help you catch up after a missed lesson as much as possible, but we encourage you to try to attend all your scheduled classes.
+
+        h3.text-center.heading-section.pad-top-heavy DISCOUNTS
+        p.pad-bottom We offer two standard discounts on our weekly coding classes. A sibling discount for two or more children in the same family signing up during one session, and a multiple class discount for one child signing up for two or more classes during the same session. Only one discount may be used per class.
+        h4.text-center Sibling discount: 10% per child - use code SIBLING
+        h4.text-center Multiple classes (in same session) discount: 10% per class - use code MULTIPLE
+    .row
+      .col-xs-12
+        h3.text-center.heading-section.pad-top-heavy STUDENT REFERRAL PROGRAM
+        p We are a small, locally-owned business, and we rely on our satisfied students to help us to spread the word about our awesome classes and camps.
+        p As a thank you for your referrals, we offer a referral credit of $25 for each new student you refer. Just tell your friends to put your name in the referral box when they sign up! It's that easy!
+        h3.pad-top The Fine Print
+        p There are no limits on the number of different students you can refer, but you can only receive one credit for a given student.
+        p The new student must first register and pay for a Power Up Tech Academy class, listing your name in the referral box. We will then add the $25 credit to your account.
+        p Your referral credit may be used for any Power Up Tech Academy class, camp or Minecraft party. There is no cash value.
+        p This program starts August 1, 2016 and is not retroactive.
+    
+  .container.width-80-percent
+    .row.pad-top
+      h2.heading-section.text-center LEARN MORE OR SIGN UP NOW 
+    .row.pad-bottom
+      .col-md-6.text-center.pad-bottom
+        .btn-align-center
+          a.btn.btn-secondary-inverse.btn-solo(href="weeklyschedule.html") View Schedule
+      .col-md-6.text-center.pad-bottom
+        .btn-align-center
+          a.btn.btn-secondary-inverse.btn-solo(href="http://bookeo.com/powerupta?category=31507UHUE31561FB215FB") Register Now
+  section.section-light
+    .container
+      .row
+        .email-box.col-lg-6.col-lg-offset-3.col-md-8.col-md-offset-2.col-xs-10.col-xs-offset-1
+          #mc_embed_signup1
+            form#mc-embedded-subscribe-form1.validate(action="//powerupta.us8.list-manage.com/subscribe/post?u=ed0abfd69c7573fb1e0291095&amp;id=b0ca742eea" method="post" name="mc-embedded-subscribe-form" target="_blank" novalidate)
+              #mc_embed_signup_scroll1
+                h2.heading-section SIGN UP FOR UPDATES
+                p Be the first to find out about new classes, camps, special events and coding news:
+                input#mce-EMAIL1.email(type="email" value="" name="EMAIL" placeholder="email address" required style="width:300px;")
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                div(style="position: absolute; left: -5000px;")
+                  input(type="text" name="b_ed0abfd69c7573fb1e0291095_b0ca742eea" tabindex="-1" value="")
+                input#mc-embedded-subscribe1.btn.btn-secondary(type="submit" value="Subscribe" name="subscribe")
+
+

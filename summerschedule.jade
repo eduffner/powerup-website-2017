@@ -1,0 +1,57 @@
+extends master-layout-fullwidth2
+
+block pagetitle
+  title Kids Technology Camps | Summer 2017 | Power Up Tech Academy
+
+block metatag
+  meta(description="Your kid can learn to code this summer! Make video games, Minecraft mods, websites and more.")
+
+
+block content
+  
+  .container
+    .row.pad-bottom
+      .col-sm-10.col-sm-offset-1.col-lg-10.col-lg-offset-1
+
+        h2.heading-section.text-center SUMMER 2017 <br>KIDS TECHNOLOGY CAMPS <br> SCHEDULE
+        .row
+          .col-md-7
+            p.text-center
+              img(src="img/summer-schedule-2017.png" width="90%" style="max-width:500px;")
+          .col-md-5
+            p.text-center
+              img(src="img/summer-legend-vert.png" width="90%" style="max-width:300px")
+        p All camps are 5 days long, from Monday to Friday, except the week of July 5-7, which is only 3 days, Wednesday to Friday.
+        p Most of our camps are half day registration to allow flexible enrollment. Morning camps are from 9am to noon. Afternoon camps are from 1pm-4pm.
+        p If you register for both morning and afternoon in the same week, lunch hour care is included free of charge. Students must bring their own bag lunch. No nuts please.
+        p Full day camps go from 9am to 4pm. They are a combo of Coding and Sports, in partnership with We Got Game. Kids will do a half day of each activity. 
+
+
+
+    .container
+      .row.pad-top
+        h2.heading-section.text-center LEARN MORE OR REGISTER NOW 
+      .row.pad-bottom
+        .col-md-6.text-center.pad-bottom
+          .btn-align-center
+            a.btn.btn-secondary-inverse.btn-solo(href="summerdescriptions.html") View Descriptions
+        .col-md-6.text-center.pad-bottom
+          .btn-align-center
+            a.btn.btn-secondary-inverse.btn-solo(href="http://bookeo.com/powerupta?category=3150KX4LPC15252265D3D") Register Now
+  section.section-light
+    .container
+      .row
+        .email-box.col-lg-6.col-lg-offset-3.col-md-8.col-md-offset-2.col-xs-10.col-xs-offset-1
+          #mc_embed_signup1
+            form#mc-embedded-subscribe-form1.validate(action="//powerupta.us8.list-manage.com/subscribe/post?u=ed0abfd69c7573fb1e0291095&amp;id=b0ca742eea" method="post" name="mc-embedded-subscribe-form" target="_blank" novalidate)
+              #mc_embed_signup_scroll1
+                h2.heading-section SIGN UP FOR UPDATES
+                p.desktop Be the first to find out about new classes, camps, special events and coding news:
+                p.phone.signup-mobile Be the first to find out about new classes, camps, special events and coding news:
+                p.pad-top-light
+                  input#mce-EMAIL1.email(type="email" value="" name="EMAIL" placeholder="email address" required style="width:300px;")
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                div(style="position: absolute; left: -5000px;")
+                  input(type="text" name="b_ed0abfd69c7573fb1e0291095_b0ca742eea" tabindex="-1" value="")
+                input#mc-embedded-subscribe1.btn.btn-secondary(type="submit" value="Subscribe" name="subscribe")
+

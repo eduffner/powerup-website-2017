@@ -1,0 +1,182 @@
+extends master-layout-fullwidth2
+
+block pagetitle
+	title Kids Technology Camps | Summer 2017 | Power Up Tech Academy
+
+block metatag
+	meta(description="Learn to code this summer with camps covering Scratch, ScratchJr, Minecraft Modding, Websites, Python and Javascript")
+
+
+block content
+	.container.width-80-percent
+		h2.heading-section.text-center FIND THE RIGHT SUMMER CAMP FOR YOUR YOUNG CODER!
+		p Our summer camps take you from age 5 to 13 with a sequence of progressively more complex coding languages. Camps can be taken multiple weeks and we will give returning students more challenging new projects.
+		.row.pad-bottom.pad-top
+			.col-sm-4
+				p 
+			.col-sm-8
+				| Click the circles to read more about each camp
+				ul.nav.nav-pills
+					li(role="presentation")
+						button.circle-button(onclick="ec()") 
+							img.circle-img(src="img/circle-ec.png" width="50px")
+					li(role="presentation")
+						button.circle-button(onclick="vg()") 
+							img.circle-img(src="img/circle-vg.png" width="50px")
+					li(role="presentation")
+						button.circle-button(onclick="m()") 
+							img.circle-img(src="img/circle-m.png" width="50px")
+					li(role="presentation")
+						button.circle-button(onclick="ms()") 
+							img.circle-img(src="img/circle-ms.png" width="50px")
+					li(role="presentation")
+						button.circle-button(onclick="gp()") 
+							img.circle-img(src="img/circle-gp.png" width="50px")
+					li(role="presentation")
+						button.circle-button(onclick="sports()") 
+							img.circle-img(src="img/circle-sports.png" width="100px")
+
+		.row#ECdesc
+			.col-sm-4
+				.block.block-light-square
+					img(src="img/kids-coding-jr.jpg" width="100%")
+			.col-sm-8
+				.block.block-center.block-light-square 
+					.row
+						.col-xs-9.text-left.pad-left.pad-top-light
+							p.no-margin Early Coding: Stories &amp; Play
+							p.small-font Entering Grades 1-2
+						.col-xs-3.pad-top-light
+							img(src="img/circle-ec.png" width="50px" style="padding:5px;")
+				.block.block-light-inverse 
+					p A fun and interactive caamp that will result in working animations created by your child!
+					p In this camp we learn coding basics while creating stories on the iPad. We talk about how computers and coding work, and introduce sequence, repetition, events, messages and more. Kids will also be able to add their own creative art and sounds to the projects.
+					p In addition to coding, we play fun unplugged and iPad games that teach logic and sequential thinking.
+					p This camp is suitable for all levels of readers.
+					p Younger kids may repeat this camp to further absorb the concepts. Older kids may be ready to proceed to Scratch. Please ask your teacher for guidance.
+					p Note: IPads are provided, but if you want to keep your work, please bring your own iPad or Android tablet, as files are saved locally on each device.
+
+		.row#VGdesc
+			.col-sm-4
+				.block.block-light-square
+					img(src="img/power-up-scratch-class.jpg" width="100%")
+			.col-sm-8
+				.block.block-center.block-light-square 
+					.row
+						.col-xs-9.text-left.pad-left.pad-top-light
+							p.no-margin Code your own Video Games
+							p.small-font Entering grades 3-6
+						.col-xs-3.pad-top-light
+							img(src="img/circle-vg.png" width="50px" style="padding:5px;")
+				.block.block-light-inverse 
+					p 
+						em *NOTE: Kids entering 2nd grade with strong ScratchJr or equivalent experience, may start Scratch in the Coding and Sports Combo camp.
+					p Discover the thrill of creating your own entertainment! 
+					p Using Scratch, a kid-friendly programming language from MIT, kids can build space invaders, a virtual pet, geometry dash or any other kind of game they can imagine. Game programming develops skills such as logic, visual design, animation, sound design, storylines and more. It's a great way to take on new challenges while having lots of fun!
+					p This is our core language, and we recommend that kids take multiple sessions of Scratch to practice and build their coding skills. It is possible to build quite large and complex projects in Scratch, so the language will grow with their skills.
+					p Beginners will be taught to build projects step by step and learn to code starting from basics. Experienced Scratchers can select their own projects (we will help with ideas, if needed!) and work on improving their coding skills with challenges, coaching and mentorship provided by our teachers.
+		.row#Sportsdesc
+			.col-sm-4
+				.block.block-light-square
+					img(src="img/coding-sports.jpg" width="100%")
+			.col-sm-8
+				.block.block-center.block-light-square 
+					.row
+						.col-xs-8.text-left.pad-left.pad-top-light
+							p.no-margin Coding and Sports Combo Camp
+							p.small-font Entering grades 2-6
+						.col-xs-4.pad-top-light
+							img(src="img/circle-sports.png" width="100%" style="padding:5px; max-width:100px;")
+				.block.block-light-inverse 
+					p
+						em *NOTE: Kids will be grouped by age and experience.
+					p Spend half the day in our "Coding Video Games and More With Scratch" camp, and half the day playing outside with professional coaches from 
+						a(href="http://wegotgamechicago.com" target="_blank") We Got Game! 
+					p During the coding camp, students will make working video games, including ones that they love to play, like Agar.io, Crossy Road and Galaga, using the awesome Scratch language from MIT. New projects will be available for returning students and those attending multiple weeks.
+					p 
+						a(href="http://wegotgamechicago.com" target="_blank") We Got Game's
+						|  multi-sport program is designed to introduce athletes to a variety of different sports including Basketball, Baseball, Football, Capture the Flag and Dodgeball in one fun-filled week. Athletes will learn the rules and essentials of each sport through skill-based games and scrimmages. 
+					p By the end of the week, your child will walk away with knowledge of multiple sports along with vital life lessons such as respect, teamwork, and self-discipline.
+		.row#MSdesc
+			.col-sm-4
+				.block.block-light-square
+					img(src="img/girl-coding.jpg" width="100%")
+			.col-sm-8
+				.block.block-center.block-light-square 
+					.row
+						.col-xs-9.text-left.pad-left.pad-top-light
+							p.no-margin Middle School Coding
+							p.small-font Entering grades 6-9
+						.col-xs-3.pad-top-light
+							img(src="img/circle-ms.png" width="50px" style="padding:5px;")
+				.block.block-light-inverse
+					p
+						em We are offering 4 different Middle School camps this year. Please be sure to confirm which date your preferred camp is running.
+					h4.pad-top-light SAMPLER/WORKSHOP (7/10, 8/7)
+					p Learn a little bit each of Python, Web programming and Javscript Minecraft Modding, then pick your favorite to go deeper. Previous students can bring a project to work on and focus on that all week, with support and coaching from our instructors.
+					h4.pad-top-light JAVASCRIPT MINECRAFT MODDING (7/17)
+					p Although Javascript is best known as web programming language, it is possible to use it in many other ways. We will be teaching it using the popular Minecraft game. Students will learn about variables, functions, conditionals, loops and more, while making modifications that work on a real Minecraft server. They will also learn about what an API is, and get to look at the Spigot API documentation.
+					h4.pad-top-light PYTHON (7/24)
+					p If you are fluent in Scratch and want to move to the next level in coding with a text-based programming language, this is the class for you! We will introduce Python commands with comparisons to Scratch, so you can easily transfer your knowledge.
+					p Projects will include generating art, making and breaking secret codes, creating games and more.
+					h4.pad-top-light WEBSITES (7/31)
+					p Learn the languages of the internet: HTML, CSS and Javascript. Students will build a website on a topic of their choice and learn to add text, headings, links, images and embedded content such as videos. We will add interactive elements, and also cover styling tools to make your pages look fabulous!
+					p This class will focus on "raw" HTML, CSS and Javascript. 
+		.row#Mdesc
+			.col-sm-4
+				.block.block-light-square
+					img(src="img/power-up-minecraft-night.jpg" width="100%")
+			.col-sm-8
+				.block.block-center.block-light-square 
+					.row
+						.col-xs-9.text-left.pad-left.pad-top-light
+							p.no-margin Code your own Minecraft Mods
+							p.small-font Grades 3-8
+						.col-xs-3.pad-top-light
+							img(src="img/circle-m.png" width="50px" style="padding:5px;")
+				.block.block-light-inverse 
+					p Learn to code by modifying one of today's most popular games! In this class, we use exploding arrows, drones that build towers for you, pumpkins that drop random lucky items, and more cool projects to learn about how programming works. Scratch experience is recommended.
+					p We are always adding new mods, so returning students are welcome.
+					p Each student must bring his/her own Minecraft account (PC/Mac version, available on Minecraft.net).
+					p Note: This is not a class to play Minecraft, so please set your child's expectations accordingly.
+		.row#GPdesc
+			.col-sm-4
+				.block.block-light-square
+					img(src="img/girl-power-coding.jpg" width="100%")
+			.col-sm-8
+				.block.block-center.block-light-square 
+					.row
+						.col-xs-9.text-left.pad-left.pad-top-light
+							p.no-margin Girl Power Coding
+							p.small-font Grades 3-6
+						.col-xs-3.pad-top-light
+							img(src="img/circle-gp.png" width="50px" style="padding:5px;")
+				.block.block-light-inverse 
+					p Learn to code in an all-girls camp with a female instructor!
+					p Girls are awesome at coding, but sometimes they don't enjoy the number of boys in our camps. This camps will be a friendly and comfortable way to introduce coding to your daughter or other girl in your life.
+					p We will focus on project ideas that are girl-centric and allow them to express their own ideas and world view freely. The class will use Scratch, which offers an easy-to-learn, highly effective coding environment, complete with graphics and sound capabilities for creative projects.
+					p The class is aimed at beginners, but girls with previous coding experience are welcome and will be given appropriate challenges.
+	.container
+		.row.pad-top
+			h2.heading-section.text-center LEARN MORE OR REGISTER NOW 
+		.row.pad-bottom
+			.col-sm-6.text-center.pad-bottom
+				.btn-align-center
+					a.btn.btn-secondary-inverse.btn-solo(href="summerschedule.html") View Schedule
+			.col-sm-6.text-center.pad-bottom
+				.btn-align-center
+					a.btn.btn-secondary-inverse.btn-solo(href="http://bookeo.com/powerupta?category=3150KX4LPC15252265D3D") Register Now
+	section.section-light
+		.container
+			.row
+				.email-box.col-lg-6.col-lg-offset-3.col-md-8.col-md-offset-2.col-xs-10.col-xs-offset-1
+					#mc_embed_signup1
+						form#mc-embedded-subscribe-form1.validate(action="//powerupta.us8.list-manage.com/subscribe/post?u=ed0abfd69c7573fb1e0291095&amp;id=b0ca742eea" method="post" name="mc-embedded-subscribe-form" target="_blank" novalidate)
+							#mc_embed_signup_scroll1
+								h2.heading-section SIGN UP FOR UPDATES
+								p Be the first to find out about new classes, camps, special events and coding news:
+								input#mce-EMAIL1.email(type="email" value="" name="EMAIL" placeholder="email address" required style="width:300px;")
+								<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+								div(style="position: absolute; left: -5000px;")
+									input(type="text" name="b_ed0abfd69c7573fb1e0291095_b0ca742eea" tabindex="-1" value="")
+								input#mc-embedded-subscribe1.btn.btn-secondary(type="submit" value="Subscribe" name="subscribe")
